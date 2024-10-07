@@ -42,6 +42,10 @@ body {
     }
 }
 
+.topnav img {
+    display: none;
+}
+
 /*Hero section*/
 
 .hero-section {
@@ -59,11 +63,11 @@ body {
         font-family: "Source Code Pro", monospace;
         font-size: 22px;
         line-height: 1.5;
-        width: 60%;
+        width: 70%;
     }
 
     img {
-        max-width: 100%; 
+
         height: auto;
     }
 }
@@ -102,15 +106,15 @@ body {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
     body {
         padding-left: 10px;
         padding-right: 10px;
     }
 
     .topnav {
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: flex;
+        justify-content: space-between;
         text-align: center;
     }
 
@@ -122,6 +126,11 @@ body {
         display: none;
     }
 
+    .topnav img {
+        display: block;
+        cursor: pointer;
+    }
+
     .hero-section {
         flex-direction: column;
         align-items: center;
@@ -129,13 +138,11 @@ body {
 
         h1 {
             text-align: center;
-            width: 100%;
             font-size: 36px;
         }
 
         h3 {
             text-align: center;
-            width: 100%;
             font-size: 12px;
         }
 
