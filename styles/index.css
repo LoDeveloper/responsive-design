@@ -1,5 +1,4 @@
 
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -21,7 +20,12 @@ body {
     align-items: center;
     margin: 30px;
     padding: 20px;
+    gap: 20px;
     font-family: "Source Code Pro", monospace;
+}
+
+.topnav h1 {
+        font-size: 24px;
 }
 
 .nav-links {
@@ -30,12 +34,12 @@ body {
     list-style: none;
     gap: 30px;
 
-        li a {
-            text-decoration: none;
-            justify-content: flex-end;
-            font-size: 16px;
-            color: #fff;
-        }
+    li a {
+        text-decoration: none;
+        justify-content: flex-end;
+        font-size: 16px;
+        color: #fff;
+    }
 }
 
 /*Hero section*/
@@ -46,56 +50,99 @@ body {
     align-items: center;
     margin: 30px;
 
-        h1 {
+    h1 {
         font-family: "Poppins", sans-serif;
         font-size: 84px;
-        
-        }
+    }
 
-        h3 {
+    h3 {
         font-family: "Source Code Pro", monospace;
         font-size: 22px;
         line-height: 1.5;
         width: 60%;
+    }
+
+    img {
+        max-width: 100%; 
+        height: auto;
+    }
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width: 1000px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-links {
+        justify-self: flex-end;
+    }
+
+    .topnav h1 {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: bold;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        h1, h3 {
+            text-align: center;
+            width: 100%;
         }
 
         img {
-            
+            max-width: 80%; 
         }
-}
-
-@media screen and (max-width: 1000px) {
-
-    .nav-links li a{
-        float: right;
-    }
-
-    .hero-section {
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-
-            h1, h3 {
-                text-align: center;
-                width: 100%;
-            }
     }
 }
-
 
 @media screen and (max-width: 320px) {
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
+    .topnav {
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+    }
 
+    .topnav h1 {
+        font-family: "Baloo 2", sans-serif;
+    }
+
+    .nav-links {
+        display: none;
+    }
 
     .hero-section {
         flex-direction: column;
         align-items: center;
-        gap: 3rem;
+        gap: 20px;
 
-            h1, h3 {
-                text-align: center;
-                width: 100%;
-            }
+        h1 {
+            text-align: center;
+            width: 100%;
+            font-size: 36px;
+        }
+
+        h3 {
+            text-align: center;
+            width: 100%;
+            font-size: 12px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+        }
     }
 }
 
@@ -119,5 +166,12 @@ body {
     font-weight: 400;
     font-style: normal;
   }
+
+.baloo-2 {
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 
   */
