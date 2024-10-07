@@ -1,0 +1,86 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/*nav bar*/
+
+.topnav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    font-family: "Source Code Pro", monospace;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
+
+        li a {
+            text-decoration: none;
+            justify-content: flex-end;
+            font-size: 16px;
+            color: #fff;
+        }
+}
+
+/*Hero section*/
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+        h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 84px;
+        
+        }
+
+        h3 {
+        font-family: "Source Code Pro", monospace;
+        font-size: 22px;
+        line-height: 1.5;
+        }
+
+        img {
+            
+        }
+}
+
+
+
+
+
+
+
+/*Fonts
+
+
+
+.source-code-pro {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  */
